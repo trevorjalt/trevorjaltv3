@@ -1,0 +1,58 @@
+
+.Header {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFEED6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 100;
+}
+
+.invisible-icon {
+    width: 42px;
+    height: 32px;
+    position: relative;
+    margin-right: 3vw;
+}
+
+.invisible-stripe {
+    display: block;
+    height: 2px;
+    width: 100%;
+    color: #FFEED6;
+}
+
+.job-title {
+    font-size: 2.3vh;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    text-decoration: none;
+    color: #050505;
+    font-size: 4vh;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-blue {
+    color: #186ca0;
+}
+
+.logo-wrapper {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media all and (max-width: 300px) {
+    .logo {
+        font-size: 3.7vh;
+    }
+}

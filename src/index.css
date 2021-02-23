@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:wght@300&family=Poppins:wght@300&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-top: 27vh;
+    color: #050505;
+    min-height: 100%;
+    position: relative;
+    background: #050505;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+.error-message {
+	  color: #BA3F1D;
+	  font-weight: bold;
+}
+
+:focus {
+	  outline: 0px
+}
+
+:focus-visible {
+	  outline: 5px solid #2683be;
+}
+
+h1 {
+	  font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    font-size: 6vh;
+    font-weight: bold;
+    color: #ffffff;
+    /* color: #C34F24; */
+    /* color: #186CA0; */
+    font-family: 'Dancing Script';
+    /* margin-top: 25vh; */
+    /* background: linear-gradient(to right, #9250E2 20%, #DD138C, #fee440, #00E0C2, #00A8E0 80%); */
+    /* background-clip: text; */
+    /* color: transparent; */
+}
+
+/* hr {
+    height: 1px;
+    width: 100vw;
+    background: linear-gradient(to right, #ffadad, #ffd6a5, #fdffb6, #caffbf, #9bf6ff, #a0c4ff, #bdb2ff, #ffc6ff);
+    margin: 0
+} */
