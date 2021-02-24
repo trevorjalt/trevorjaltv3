@@ -29,6 +29,10 @@
     height: 3vh;
 }
 
+.navigation-link-wrapper:hover {
+    color: #186CA0;
+}
+
 .navigation-menu-wrapper {
     border-top: solid 1px #050505;
     display: flex;

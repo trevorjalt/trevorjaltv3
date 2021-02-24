@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import PortfolioContext from '../../contexts/PortfolioContext'
-import AppleMusicIcon from './images/portfolio-apple-music.png'
-import EmailIcon from './images/portfolio-email.png'
-import GitHubIcon from './images/portfolio-github.png'
-import InstagramIcon from './images/portfolio-instagram.png'
-import LinkedInIcon from './images/portfolio-linkedin.png'
-import SpotifyIcon from './images/portfolio-spotify.png'
+import AppleMusicIcon from '../../images/portfolio-apple-music.png'
+import EmailIcon from '../../images/portfolio-email.png'
+import GitHubIcon from '../../images/portfolio-github.png'
+import InstagramIcon from '../../images/portfolio-instagram.png'
+import LinkedInIcon from '../../images/portfolio-linkedin.png'
+import SpotifyIcon from '../../images/portfolio-spotify.png'
 import './NavMenu.css'
 
 

@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import { Route, Switch } from 'react-router-dom'
 import PortfolioContext from '../../contexts/PortfolioContext'
+import AboutRoute from '../../routes/AboutRoute/AboutRoute'
 import LandingRoute from '../../routes/LandingRoute/LandingRoute'
+import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
 import NavMenu from '../NavMenu/NavMenu'
 import './App.css'
@@ -26,8 +28,12 @@ export default class App extends Component {
             <Switch>
                 <Route
                     exact
-                    patch={'/'}
+                    path={'/'}
                     component={LandingRoute}
+                />
+                <Route
+                    path={'/about'}
+                    component={AboutRoute}
                 />
             </Switch>
         )
@@ -48,6 +54,7 @@ export default class App extends Component {
                   )}
                   {this.renderRoutes()} 
               </main>
+              <Footer />
           </div>
       )
     }

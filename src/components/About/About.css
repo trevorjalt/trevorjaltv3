@@ -1,0 +1,111 @@
+
+.about-photo {
+    width: 100vw;
+    object-fit: cover;
+    height: 60vh;
+}
+
+.about-text-wrapper {
+    width: 80vw;
+    text-align: left;
+    line-height: 1.5;
+    font-size: 2.3vh;
+    margin: 3vh 0 3vh 0;
+}
+
+.about-work-together, .fun-facts-text {
+    text-decoration: none;
+    color: #186CA0;
+    font-weight: bold;
+}
+
+.about-work-together-wrapper {
+    text-align: center;
+    margin: 3vh 0 1vh 0;
+}
+
+.about-wrapper {
+    width: 100vw;
+    background: #ffffff;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fun-facts {
+    background: #ffffff;
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+/* .fun-facts-text {
+    color: #186CA0;
+    font-weight: bold;
+} */
+
+.enough-about-me-wrapper {
+    height: 28vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.enough-about-me-wrapper {
+    height: 28vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.enough-about-me-wrapper h2 {
+    margin-top: 2vh;
+}
+
+.mission-statement {
+    color: white;
+    text-align: left;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mission-statement li {
+    width: 60vw;
+    margin-top: 1.5vh;
+    font-size: 2.3vh;
+}
+
+.mission-title {
+    color: #DAECF5;
+    margin-top: 2vh;
+    font-size: 3.4vh;
+    font-weight: bold;
+}
+
+@media all and (min-width: 850px) {
+    .mission-statement li {
+        width: 55vw;
+    }
+}
+
+@media all and (min-width: 900px) {
+    .mission-statement li {
+        width: 45vw;
+    }
+}
+
+@media all and (min-width: 1000px) {
+    .mission-statement li {
+        width: 40vw;
+    }
+}
