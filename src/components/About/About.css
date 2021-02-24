@@ -13,7 +13,7 @@
     margin: 3vh 0 3vh 0;
 }
 
-.about-work-together, .fun-facts-text {
+.about-work-together {
     text-decoration: none;
     color: #186CA0;
     font-weight: bold;
@@ -33,21 +33,6 @@
     align-items: center;
     justify-content: center;
 }
-
-.fun-facts {
-    background: #ffffff;
-    width: 100vw;
-    height: 40vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center
-}
-
-/* .fun-facts-text {
-    color: #186CA0;
-    font-weight: bold;
-} */
 
 .enough-about-me-wrapper {
     height: 28vh;

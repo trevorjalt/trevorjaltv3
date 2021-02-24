@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import TrevorJAltStanding from '../../images/trevor-j-alt-standing.jpg'
+import Carousel from '../Carousel/Carousel'
 import './About.css'
 
 
@@ -9,8 +10,9 @@ export default class About extends Component {
         super(props)
 
         const state = {
-            error: null
+            error: null,
         }
+
         this.state = state
     }
     
@@ -63,14 +65,6 @@ export default class About extends Component {
         )
     }
 
-    renderFunFacts() {
-        return (
-            <div className='fun-facts'>
-                <span className='fun-facts-text'>FUN FACTS</span>
-            </div>
-        )
-    }
-
     renderMissionStatement() {
         return (
             <div className='mission-statement'>
@@ -109,7 +103,7 @@ export default class About extends Component {
                 {this.renderQuote()}
                 {this.renderAboutMain()}   
                 {this.renderMissionStatement()}  
-                {this.renderFunFacts()}       
+                <Carousel />      
                 {this.renderEnoughAboutMe()}
             </div>
         )
