@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import PortfolioContext from '../../contexts/PortfolioContext'
 import TrevorJAltStanding from '../../images/trevor-j-alt-standing.jpg'
 import Carousel from '../Carousel/Carousel'
 import './About.css'
@@ -14,6 +15,12 @@ export default class About extends Component {
         }
 
         this.state = state
+    }
+
+    componentDidMount() {
+        window.scrollTo(0,0)
+        this.context.setToggleCarouselTrue()
+        this.context.setFactsLength()
     }
     
     renderAboutMain() {
@@ -32,13 +39,13 @@ export default class About extends Component {
                         perpetual student, thriving on learning new things and finding 
                         solutions to old problems.  I love learning from, working with, 
                         and teaching others.  I see patterns all around me.  I love 
-                        details.  I find beauty in all things. I’m a protector. I am 
+                        details.  I find beauty in all things. I’m a protector. I'm 
                         always creating something.  And it’s key to me that 
-                        in the world of coding, as it is to in the physical world, for 
+                        in the world of coding, as it also is in the physical world, for 
                         all of these things to come together, there must be effective 
                         communication every step of the way.  Only then can all the 
                         moving parts come together to create a beautiful and secure 
-                        product.  If that doesn’t make you say “Whatever, Trevor!”, 
+                        product.  If that doesn’t make you say 'Whatever, Trevor!', 
                         then we’re a great fit to collaborate.</p>
                     <div className='about-work-together-wrapper'>
                         <Link
@@ -109,3 +116,5 @@ export default class About extends Component {
         )
     }
 }
+
+About.contextType = PortfolioContext

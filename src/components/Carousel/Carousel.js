@@ -1,18 +1,24 @@
 import React, { Component } from 'react'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import PortfolioContext from '../../contexts/PortfolioContext'
+import AppleMusicIcon from '../../images/portfolio-apple-music.png'
 import ArrowLeft from '../../images/arrow-left.png'
 import ArrowRight from '../../images/arrow-right.png'
+import Benchmark from '../../images/benchmark-social.png'
+import Fluent from '../../images/fluent-social.png'
+import Moments from '../../images/moments-social.png'
+import SpotifyIcon from '../../images/portfolio-spotify.png'
 import './Carousel.css'
 
 
-export default class About extends Component {
+export default class Carousel extends Component {
     constructor(props) {
         super(props)
 
         const state = {
             error: null,
             activeIndex: 0,
-            length: 6,
+            // length: 0,
             facts: [
                 {
                     id: 0,
@@ -38,12 +44,30 @@ export default class About extends Component {
                     id: 5,
                     fact: 'In between sets at the gym, I\'m either dancing like no one\'s watching, or working on code in my head.'
                 }
+            ],
+            projects: [
+                {
+                    id: 0,
+                    image: `${Moments}`,
+                    name: 'moments'
+                },
+                {
+                    id: 1,
+                    image: `${Fluent}`,
+                    name: 'fluent'
+                },
+                {
+                    id: 2,
+                    image: `${Benchmark}`,
+                    name: 'benchMark'
+                },
             ]
+
         }
 
         const goToNextSlide = () => {
             let index = this.state.activeIndex
-            let length = this.state.length
+            let length = this.context.length
 
             if (index === length - 1) {
                 index = 0
@@ -55,7 +79,7 @@ export default class About extends Component {
 
         const goToPrevSlide = () => {
             let index = this.state.activeIndex
-            let length = this.state.length
+            let length = this.context.length
 
             if (index < 1) {
                 index = length - 1
@@ -85,19 +109,73 @@ export default class About extends Component {
     }
 
     renderSlide(id) {
-        let displaySlide = this.state.facts.find(el =>  el.id === id)
+        let displaySlide = []
+
+        if (this.context.toggleCarousel === true) {
+            displaySlide = this.state.facts.find(el =>  el.id === id)
+        } else {
+            displaySlide = this.state.projects.find(el =>  el.id === id)
+        }
         
-        return (
-            <div>
-                {displaySlide.fact}
-            </div>
-        )
+        if (this.context.toggleCarousel === true) {
+            return (
+                <div>
+                    {displaySlide.fact}
+                    {id === 0
+                        ? <div className='music-icons'>
+                                <a 
+                                href='https://music.apple.com/profile/trevorjalt' 
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                <img
+                                    className='social-icon'
+                                    alt='apple-music'
+                                    src={AppleMusicIcon}
+                                />
+                            </a>
+                            <a 
+                                href='https://open.spotify.com/user/3h61o9gjw94s00704jjlnxx8r?si=PX2-_t71TRKVIS96Rl59tw' 
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                <img
+                                    className='social-icon'
+                                    alt='spotify'
+                                    src={SpotifyIcon}
+                                />
+                            </a>
+                        </div>
+                        : ''}
+                </div>
+            )
+        } else {
+            return (
+                <div>
+                    <Link
+                        to={'/portfolio'}
+                        className='project'
+                        id='caption'
+                    >
+                        <span className='text'>{displaySlide.name}</span>
+                        <img
+                        className='project-image'
+                        alt={displaySlide.name}
+                        src={displaySlide.image}
+                    />
+                    </Link>                    
+                </div>
+            )
+        }
     }
 
     renderCarousel() {
         return (
             <div className='carousel-wrapper'>
-                <span className='carousel-title'>FUN FACTS</span>
+                {this.context.toggleCarousel === true 
+                    ? <span className='carousel-title'>FUN FACTS</span>
+                    : <span className='carousel-title'>RECENT PROJECTS</span>
+                }
                 <div className='carousel'>
                     <img
                         className='arrow'
@@ -144,3 +222,5 @@ export default class About extends Component {
         )
     }
 }
+
+Carousel.contextType = PortfolioContext

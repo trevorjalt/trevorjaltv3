@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import PortfolioContext from '../../contexts/PortfolioContext'
 import TrevorJAltLaughting from '../../images/trevor-j-alt-laughing.jpg'
+import Carousel from '../Carousel/Carousel'
 import './Landing.css'
 
 
@@ -12,6 +14,12 @@ export default class Landing extends Component {
             error: null
         }
         this.state = state
+    }
+
+    componentDidMount() {
+        window.scrollTo(0,0)
+        this.context.setToggleCarouselFalse()
+        this.context.setProjectsLength()
     }
     
     renderLandingMain() {
@@ -71,8 +79,11 @@ export default class Landing extends Component {
                 </div>
                 {this.renderQuote()}
                 {this.renderLandingMain()}   
-                {this.renderOurServices()}         
+                {this.renderOurServices()}
+                <Carousel />         
             </div>
         )
     }
 }
+
+Landing.contextType = PortfolioContext
