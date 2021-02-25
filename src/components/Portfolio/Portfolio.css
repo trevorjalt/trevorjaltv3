@@ -1,0 +1,135 @@
+
+.description-wrapper {
+    width: 80vw;
+    text-align: left;
+    margin: 7vh 0 7vh 0
+}
+
+.description-wrapper h3 {
+    text-align: center;
+    margin-bottom: 7vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.experience-content-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 9.5vh;
+}
+
+.experience-wrapper h3 {
+    margin: 7vh 0 7vh 0;
+}
+
+.link-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    justify-content: center;
+}
+
+.link-wrapper a {
+    text-decoration: none;
+    color: #050505;
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 4vh;
+    margin: 2vh 0 2vh 0
+}
+
+.portfolio-title {
+    background: #ffffff;
+    margin-top: 7vh;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-title h3 {
+    font-size: 3vh;
+}
+
+.project-logo {
+    width: 100vw;
+    object-fit: cover;
+}
+
+.project-preview {
+    width: 30vw;
+    border: solid 2px #186CA0;
+    margin-left: 19vw;
+}
+
+.project-preview-wrapper {
+    width: 50vw;
+}
+
+.project-wrapper {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.slogan-wrapper {
+    background: #050505;
+    width: 100vw;
+    padding: 5vh 0 5vh 0;
+}
+
+.tech-category {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 5vh;
+    margin: 3vh 0 3vh 0;
+    font-weight: bold;
+}
+
+.tech-title {
+    color: #DAECF5;
+    font-size: 2.3vh;
+}
+
+.tech-wrapper {
+    background: #050505;
+    width: 100vw;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 9.5vh 0 9.5vh 0;
+}
+
+.tech-wrapper span {
+    line-height: 1.3;
+    font-weight: 2.3vh;
+}
+
+
+@media all and (min-width: 700px) {
+    .link-wrapper a {
+        font-size: 5vh;
+        margin: 5vh 0 5vh 0
+    }
+}
+
+@media all and (min-width: 1000px) {
+    .description {
+        width: 60vw;
+    }
+
+    .link-wrapper a {
+        font-size: 7vh;
+        margin: 7vh 0 7vh 0
+    }
+
+    .portfolio-title {
+        height: 7vh;
+        padding-top: 9.5vh;
+    }
+
+    .project-logo {
+        width: 50vw;
+        border: solid 2px #050505;
+        margin-top: 9.5vh;
+    }
+}

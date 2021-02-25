@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom'
 import PortfolioContext from '../../contexts/PortfolioContext'
 import AboutRoute from '../../routes/AboutRoute/AboutRoute'
 import LandingRoute from '../../routes/LandingRoute/LandingRoute'
+import PortfolioRoute from '../../routes/PortfolioRoute/PortfolioRoute'
 import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
 import NavMenu from '../NavMenu/NavMenu'
@@ -34,6 +35,10 @@ export default class App extends Component {
                 <Route
                     path={'/about'}
                     component={AboutRoute}
+                />
+                <Route
+                    path={'/portfolio'}
+                    component={PortfolioRoute}
                 />
             </Switch>
         )

@@ -4,10 +4,8 @@ import PortfolioContext from '../../contexts/PortfolioContext'
 import AppleMusicIcon from '../../images/portfolio-apple-music.png'
 import ArrowLeft from '../../images/arrow-left.png'
 import ArrowRight from '../../images/arrow-right.png'
-import Benchmark from '../../images/benchmark-social.png'
-import Fluent from '../../images/fluent-social.png'
-import Moments from '../../images/moments-social.png'
 import SpotifyIcon from '../../images/portfolio-spotify.png'
+import Store from '../Store/Store'
 import './Carousel.css'
 
 
@@ -18,51 +16,6 @@ export default class Carousel extends Component {
         const state = {
             error: null,
             activeIndex: 0,
-            // length: 0,
-            facts: [
-                {
-                    id: 0,
-                    fact: 'Music is life.  I make (and share) playlists regularly.  Need some motivation or new tunes? Check out my playlists.'
-                },
-                {
-                    id: 1,
-                    fact: 'I love all things Dragon Ball (let’s be real, Super was *ahem* a limit breaker).'
-                },
-                {
-                    id: 2,
-                    fact: 'Besides learning to code, switching to a plant based diet is the best thing I ever did for myself.'
-                },
-                {
-                    id: 3,
-                    fact: 'Lady Gaga’s ‘Stupid Love’ is always my mood.'
-                },
-                {
-                    id: 4,
-                    fact: 'I used to work for Disney, performing in shows as a certain son of man who grew up in the jungle.'
-                },
-                {
-                    id: 5,
-                    fact: 'In between sets at the gym, I\'m either dancing like no one\'s watching, or working on code in my head.'
-                }
-            ],
-            projects: [
-                {
-                    id: 0,
-                    image: `${Moments}`,
-                    name: 'moments'
-                },
-                {
-                    id: 1,
-                    image: `${Fluent}`,
-                    name: 'fluent'
-                },
-                {
-                    id: 2,
-                    image: `${Benchmark}`,
-                    name: 'benchMark'
-                },
-            ]
-
         }
 
         const goToNextSlide = () => {
@@ -112,9 +65,9 @@ export default class Carousel extends Component {
         let displaySlide = []
 
         if (this.context.toggleCarousel === true) {
-            displaySlide = this.state.facts.find(el =>  el.id === id)
+            displaySlide = Store.facts.find(el =>  el.id === id)
         } else {
-            displaySlide = this.state.projects.find(el =>  el.id === id)
+            displaySlide = Store.projects.find(el =>  el.id === id)
         }
         
         if (this.context.toggleCarousel === true) {

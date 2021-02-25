@@ -38,14 +38,13 @@ export default class About extends Component {
                         coding where all my passions and skills come together.  I’m the 
                         perpetual student, thriving on learning new things and finding 
                         solutions to old problems.  I love learning from, working with, 
-                        and teaching others.  I see patterns all around me.  I love 
+                        and teaching others.  I see patterns all around me.  I live in the 
                         details.  I find beauty in all things. I’m a protector. I'm 
                         always creating something.  And it’s key to me that 
                         in the world of coding, as it also is in the physical world, for 
-                        all of these things to come together, there must be effective 
-                        communication every step of the way.  Only then can all the 
-                        moving parts come together to create a beautiful and secure 
-                        product.  If that doesn’t make you say 'Whatever, Trevor!', 
+                        all the individual parts to come together effectively, there must be
+                        communication every step of the way.  The result: a beautiful and 
+                        secure product.  If that doesn’t make you say 'Whatever, Trevor!', 
                         then we’re a great fit to collaborate.</p>
                     <div className='about-work-together-wrapper'>
                         <Link
