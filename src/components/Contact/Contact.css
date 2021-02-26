@@ -1,0 +1,94 @@
+
+button {
+    margin: 5vh 3vw 9.5vh 3vw; 
+    font-family: 'Poppins', sans-serif;
+    width: 15vw;
+    height: 5vh;
+    font-size: 2vh;
+    background: #ffffff;
+    border: solid 1px #050505;
+}
+
+button:hover {
+    color: #ffffff;
+    background: #050505;
+}
+
+.contact-form h3 {
+    margin: 9.5vh 0 0 0;
+}
+
+.contact-form h4 {
+    font-family: 'Dancing Script' , sans-serif;
+    font-size: 3.5vh;
+    /* margin: 0; */
+}
+
+.contact-social {
+    margin-bottom: 3vh;
+}
+
+.contact-social a {
+    margin: 1.5vw;
+}
+
+.farewell {
+    margin: 9.5vh 0 9.5vh 0;
+}
+
+.farewell h4 {
+    font-size: 5vh;
+    margin: 0;
+}
+
+form, .contact-form {
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+}
+
+.form-wrapper {
+	text-align:left;
+}
+
+input {
+    height: 4vh;
+}
+
+input, textarea {
+    padding: 1vh 0 1vh 0;
+    display: flex;
+	flex-direction: column;
+	background-color: #DAECF5;
+    width: 50vw;
+	border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+	font-size: 2.3vh;
+	text-indent: 3vw;
+	margin: 1vh 0 1vh 0;
+	color: #050505;
+}
+
+textarea {
+    height: 15vh;
+}
+
+input:focus, textarea:focus {
+	outline: none;
+	background-color: #EBFEFF;
+}
+
+label {
+	font-size: 2.3vh;
+	margin-left: 3vw;
+	font-weight: bold;
+	color: #186CA0;
+}
+
+@media all and (max-width: 800px) {
+    input, textarea {
+        width: 100vw;;
+    }
+}

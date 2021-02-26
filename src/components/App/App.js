@@ -2,7 +2,9 @@ import React, { Component } from 'react'
 import { Route, Switch } from 'react-router-dom'
 import PortfolioContext from '../../contexts/PortfolioContext'
 import AboutRoute from '../../routes/AboutRoute/AboutRoute'
+import ContactRoute from '../../routes/ContactRoute/ContactRoute'
 import LandingRoute from '../../routes/LandingRoute/LandingRoute'
+import NotFoundRoute from '../../routes/NotFoundRoute/NotFoundRoute'
 import PortfolioRoute from '../../routes/PortfolioRoute/PortfolioRoute'
 import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
@@ -20,10 +22,6 @@ export default class App extends Component {
         this.state = state
     }
 
-    componentDidMount() {
-        this.context.clearError()
-    }
-
     renderRoutes() {
         return (
             <Switch>
@@ -39,6 +37,13 @@ export default class App extends Component {
                 <Route
                     path={'/portfolio'}
                     component={PortfolioRoute}
+                />
+                 <Route
+                    path={'/contact'}
+                    component={ContactRoute}
+                />
+                <Route
+                    component={NotFoundRoute}
                 />
             </Switch>
         )

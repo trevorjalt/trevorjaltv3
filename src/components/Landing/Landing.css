@@ -1,22 +1,4 @@
 
-.landing-photo {
-    width: 100vw;
-    object-fit: cover;
-}
-
-.landing-text-wrapper {
-    width: 100vw;
-    background: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.landing-wrapper {
-    width: 100vw;
-    margin-top: 7vh;
-}
-
 .services-contact-me {
     text-decoration: none;
     color: #DAECF5;
@@ -59,19 +41,6 @@
 }
 
 @media all and (min-width: 800px) {
-    .landing-wrapper {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .landing-photo {
-        width: 50vw;
-    }
-
-    .landing-text-wrapper {
-        width: 50vw;
-    }
-
     .services-wrapper h3 {
         font-size: 4vh;
     }

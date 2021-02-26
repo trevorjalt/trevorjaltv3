@@ -54,11 +54,23 @@ export default class Carousel extends Component {
             }
         }
 
+        const handleKeyPressedProject = (ev, id) => {
+            if (ev.key === 'Enter') {
+                this.handleProjectClick(id)
+            }
+        }
+    
+        const handleProjectClick = (id) => {
+            this.context.setProjectId(id)
+        }
+
         this.state = state
         this.goToNextSlide = goToNextSlide
         this.goToPrevSlide = goToPrevSlide
         this.handleKeyPressedNext = handleKeyPressedNext
         this.handleKeyPressedPrev = handleKeyPressedPrev
+        this.handleKeyPressedProject = handleKeyPressedProject
+        this.handleProjectClick = handleProjectClick
     }
 
     renderSlide(id) {
@@ -109,6 +121,8 @@ export default class Carousel extends Component {
                         to={'/portfolio'}
                         className='project'
                         id='caption'
+                        onClick={() => this.handleProjectClick(displaySlide.id)}
+                        onKeyDown={(ev) => this.handleKeyPressedProject(ev, displaySlide.id)}
                     >
                         <span className='text'>{displaySlide.name}</span>
                         <img

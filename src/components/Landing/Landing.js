@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import PortfolioContext from '../../contexts/PortfolioContext'
-import TrevorJAltLaughting from '../../images/trevor-j-alt-laughing.jpg'
+import TrevorJAltBlue from '../../images/trevor-j-alt-blue.png'
 import Carousel from '../Carousel/Carousel'
 import './Landing.css'
 
@@ -20,20 +20,21 @@ export default class Landing extends Component {
         window.scrollTo(0,0)
         this.context.setToggleCarouselFalse()
         this.context.setProjectsLength()
+        this.context.setProjectId(null)
     }
     
     renderLandingMain() {
         return (
-            <div className='landing-wrapper'>
-                <div className='landing-text-wrapper'>
+            <div className='main-wrapper'>
+                <div className='main-text-wrapper'>
                     <div className='text-container'>
                         <h3>Developing a more secure and beautiful world.</h3>
                     </div>
                 </div>
                 <img
-                    className='landing-photo'
+                    className='main-photo'
                     alt='trevor-j-alt-laughing'
-                    src={TrevorJAltLaughting}
+                    src={TrevorJAltBlue}
                 />
             </div>
         )

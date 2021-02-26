@@ -1,0 +1,21 @@
+
+.go-back {
+    font-size: 2.3vh;
+    color: #DAECF5;
+}
+
+.not-found-route {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 73vh;
+}
+
+.not-found-wrapper {
+    width: 60vw;
+}
+
+.not-found-wrapper h2 {
+    margin-bottom: 3vh;
+}

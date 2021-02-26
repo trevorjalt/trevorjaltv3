@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
-import About from '../../components/About/About' 
+import Contact from '../../components/Contact/Contact' 
 
 
-export default class AboutRoute extends Component {
+export default class ContactRoute extends Component {
     render() {
         return (
             <section>
-                <About />
+                <Contact />
             </section>
         )
     }

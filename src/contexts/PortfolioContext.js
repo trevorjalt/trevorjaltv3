@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
 
 const PortfolioContext = React.createContext({
-    error: null,
     length: 3,
+    projectId: null,
     showNav: false,
     toggleCarousel: false,
-    clearError: () => { },
-    setError: () => { },
     setFactsLength: () => { },
+    setProjectId: () => { },
     setProjectsLength: () => { },
     setShowNav: () => { },
     setShowNavFalse: () => { },
@@ -22,23 +21,18 @@ export class PortfolioProvider extends Component {
         super(props)
 
         const state = {
-            error: null,
             length: 3,
+            projectId: null,
             showNav: false,
             toggleCarousel: false,
-        }
-    
-        const clearError = () => {
-            this.setState({ error: null })
-        }
-      
-        const setError = error => {
-            console.error(error)
-            this.setState({ error })
         }
 
         const setFactsLength = () => {
             this.setState({ length: 6 })
+        }
+
+        const setProjectId = (id) => {
+            this.setState({ projectId: id })
         }
 
         const setProjectsLength = () => {
@@ -62,9 +56,8 @@ export class PortfolioProvider extends Component {
         }
 
         this.state = state
-        this.clearError = clearError
-        this.setError = setError
         this.setFactsLength = setFactsLength
+        this.setProjectId = setProjectId
         this.setProjectsLength = setProjectsLength
         this.setShowNavFalse = setShowNavFalse
         this.setShowNav = setShowNav
@@ -74,13 +67,12 @@ export class PortfolioProvider extends Component {
     
     render() {
         const value = {
-            error: this.state.error,
             length: this.state.length,
+            projectId: this.state.projectId,
             showNav: this.state.showNav,
             toggleCarousel: this.state.toggleCarousel,
-            clearError: this.clearError,
-            setError: this.setError,
             setFactsLength: this.setFactsLength,
+            setProjectId: this.setProjectId,
             setProjectsLength: this.setProjectsLength,
             setShowNav: this.setShowNav,
             setShowNavFalse: this.setShowNavFalse,

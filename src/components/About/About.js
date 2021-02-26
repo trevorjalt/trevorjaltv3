@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import PortfolioContext from '../../contexts/PortfolioContext'
-import TrevorJAltStanding from '../../images/trevor-j-alt-standing.jpg'
+import TrevorJAltSmiling from '../../images/trevor-j-alt-smiling.png'
 import Carousel from '../Carousel/Carousel'
 import './About.css'
 
@@ -21,6 +21,7 @@ export default class About extends Component {
         window.scrollTo(0,0)
         this.context.setToggleCarouselTrue()
         this.context.setFactsLength()
+        this.context.setProjectId(null)
     }
     
     renderAboutMain() {
@@ -29,7 +30,7 @@ export default class About extends Component {
                 <img
                     className='about-photo'
                     alt='trevor-j-alt-laughing'
-                    src={TrevorJAltStanding}
+                    src={TrevorJAltSmiling}
                 />
                 <div className='about-text-wrapper'>
                     <p>I’m a software developer, and privacy and data rights advocate 
