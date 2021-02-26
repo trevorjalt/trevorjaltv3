@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PortfolioContext from '../../contexts/PortfolioContext'
+import EmailIcon from '../../images/portfolio-email.png'
 import GitHubIcon from '../../images/portfolio-github.png'
 import LinkedInIcon from '../../images/portfolio-linkedin.png'
 import TrevorJAltCerulean from '../../images/trevor-j-alt-cerulean.png'
@@ -110,6 +111,14 @@ export default class Contact extends Component {
                         alt='linkedin'
                         src={LinkedInIcon}
                     />
+                </a>
+                <a 
+                    href='mailto:trevor@trevorjalt.com?subject=Hey%20I%20Saw%20Your%20Portfolio'>
+                        <img 
+                            className='social-icon'
+                            alt='email-me'
+                            src={EmailIcon}
+                        />
                 </a>
             </div>
         )

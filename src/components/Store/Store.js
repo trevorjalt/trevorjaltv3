@@ -18,7 +18,7 @@ const Store = {
         },
         {
             id: 2,
-            fact: 'Besides learning to code, switching to a plant based diet is the best thing I ever did for myself.'
+            fact: 'Besides learning to code, switching to a plant-based diet is the best thing I ever did for myself.'
         },
         {
             id: 3,
@@ -26,11 +26,11 @@ const Store = {
         },
         {
             id: 4,
-            fact: 'I used to work for Disney, performing in shows as a certain son of man who grew up in the jungle.'
+            fact: 'I used to work for Disney, performing in shows as a certain \'Son of man\' who grew up in the jungle.'
         },
         {
             id: 5,
-            fact: 'In between sets at the gym, I\'m either dancing like no one\'s watching, or working on code in my head.'
+            fact: 'In between sets at the gym, I\'m either dancing like no one\'s watching or working on code in my head.'
         }
     ],
 
@@ -40,7 +40,7 @@ const Store = {
             image: `${Moments}`,
             preview: `${MomentsPreview}`,
             name: 'moments',
-            description: 'moments is my love letter to Instagram, a social media platform and passion project designed for ongoing development and personal educational growth in image processing and how to implement a heavily conditionally rendered environment which handles large amounts of data storage and retrieval.',
+            description: 'moments is my love letter to Instagram, a social media platform and passion project designed for ongoing development and personal educational growth in image processing and how to implement a heavily conditionally rendered environment that handles large amounts of data storage and retrieval.',
             supplemental: 'And really, who doesn’t love scrolling through photos attached with inspirational quotes and song lyrics?',
             webAddress: 
                 {
@@ -73,7 +73,7 @@ const Store = {
             image: `${Fluent}`,
             preview: `${FluentPreview}`,
             name: 'fluent',
-            description: 'fluent is a full stack application where the user can practice learning a language with the spaced repetition revision technique.',
+            description: 'fluent is a full-stack application where the user can practice learning a language with the spaced repetition revision technique.',
             webAddress: 
                 {
                     live: 'https://fluent-live.vercel.app',
@@ -104,7 +104,7 @@ const Store = {
             image: `${Benchmark}`,
             preview: `${BenchmarkPreview}`,
             name: 'benchMark',
-            description: 'A full stack application created by yours truly, giving the user the ability to track their strength-training progress in real time, all the while keeping the user firmly in the driver\'s seat with the control of their data.',
+            description: 'A full-stack application created by yours truly, giving the user the ability to track their strength-training progress in real-time, all the while keeping the user firmly in the driver\'s seat with the control of their data.',
             webAddress: 
                 {
                     live: 'https://benchmark-live.vercel.app',

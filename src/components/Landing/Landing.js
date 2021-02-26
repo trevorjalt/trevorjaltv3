@@ -55,7 +55,7 @@ export default class Landing extends Component {
         return (
             <div className='services-wrapper'>
                 <span>OUR SERVICES</span>
-                <h3>Full Stack Web Applications • Web Design</h3>
+                <h3>Full-Stack Web Applications • Web Design</h3>
                 <Link
                         to='/contact'
                         className='services-contact-me'

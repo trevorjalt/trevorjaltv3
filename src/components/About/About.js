@@ -36,7 +36,7 @@ export default class About extends Component {
                     <p>I’m a software developer, and privacy and data rights advocate 
                         currently residing in the Atlanta, Georgia Metropolitan Area.</p>
                     <p>I’ve lived, worked, and learned all over the world, and it’s in 
-                        coding where all my passions and skills come together.  I’m the 
+                        coding where all my passions and skills come together.  I’m a 
                         perpetual student, thriving on learning new things and finding 
                         solutions to old problems.  I love learning from, working with, 
                         and teaching others.  I see patterns all around me.  I live in the 
