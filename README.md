@@ -1,6 +1,6 @@
 # trevorjalt
 
-`trevorjalt` is developer Trevor J Alt’s official full stack web application and web design portfolio.  Designed to be accessible, responsive, engaging, and interactive. 
+`trevorjalt` is developer Trevor J Alt’s official full-stack web application and web design portfolio.  Designed to be accessible, responsive, engaging, and interactive. 
 
 
 To see `trevorjalt` in action, check out [trevorjalt](https://trevorjalt.com/ "trevorjalt").
