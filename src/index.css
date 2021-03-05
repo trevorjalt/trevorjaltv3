@@ -6,6 +6,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     margin-top: 27vh;
+    width: 100vw;
     color: #050505;
     min-height: 100%;
     position: relative;
