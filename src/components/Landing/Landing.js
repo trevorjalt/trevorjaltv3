@@ -88,8 +88,8 @@ export default class Landing extends Component {
                     {error && <p>{error.message}</p>}
                 </div>
                 {this.renderQuote()}
-                {/* {this.renderLandingMain()}    */}
-                {/* {this.renderOurServices()} */}
+                {this.renderLandingMain()}   
+                {this.renderOurServices()}
                 {/* <RecentProject /> */}
                 {this.renderQuote2()}
             </div>
