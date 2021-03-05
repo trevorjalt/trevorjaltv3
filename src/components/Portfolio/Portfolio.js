@@ -17,8 +17,7 @@ export default class Portfolio extends Component {
         const divToFocus = []
 
         const handleScroll = () => {
-            const { projectId } = this.context
-            let divObject = this.divToFocus.find(obj => obj.id === projectId)
+            let divObject = this.divToFocus
     
             if (divObject.ref !== undefined) {
                 divObject.ref.scrollIntoView({
@@ -189,12 +188,20 @@ export default class Portfolio extends Component {
     }
 
     renderProjects() {
+        const { projectId } = this.context
+
+        let project = []
+
+        if ( projectId === null ) {
+            project = Store.projects[0]
+        } else { 
+            project = Store.projects[projectId]
+        }
+
         return(
-            Store.projects.map((project, index) => (
-                <div key={project.id} className='project-wrapper' ref={ref => this.divToFocus[index] = {ref, id: project.id}}>
+                <div key={project.id} className='project-wrapper' ref={ref => this.divToFocus = {ref, id: project.id}}>
                     {this.renderProjectDetails(project.id)}
                 </div>
-            ))
         )
     }
 
@@ -212,8 +219,6 @@ export default class Portfolio extends Component {
     
     render() {
         const { error } = this.state
-        const { projectId } = this.context
-        console.log('projectId', projectId)
         
         return (
             <div>

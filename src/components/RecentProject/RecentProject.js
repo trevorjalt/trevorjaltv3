@@ -50,24 +50,28 @@ export default class RecentProject extends Component {
             <div    
                 className='recent-project-wrapper' 
             >
-                <img
-                    className='recent-project-preview'
-                    alt={project.name}
-                    src={project.preview}
-                    tabIndex='0'
-                    role='feed'
-                    aria-label='project-logo'
-                />
-                <h3>{project.name}</h3>
-                {this.renderLinks(project)}
-                <p>{project.description}</p>
-                <h4>TECH</h4>
-                <div className='recent-project-tech-wrapper'>
-                    {project.techSummary.map(el => {
-                        return (
-                            <span key={el}>{el}, </span>
-                        )
-                    })}
+                <div className='recent-project-details-wrapper'>
+                    <img
+                        className='recent-project-preview'
+                        alt={project.name}
+                        src={project.preview}
+                        tabIndex='0'
+                        role='feed'
+                        aria-label='project-logo'
+                    />
+                    <div className='recent-project-text-wrapper'>
+                        <h3>{project.name}</h3>
+                        {this.renderLinks(project)}
+                        <p>{project.description}</p>
+                        <h4>TECH</h4>
+                        <div className='recent-project-tech-wrapper'>
+                            {project.techSummary.map(el => {
+                                return (
+                                    <span key={el}>{el}, </span>
+                                )
+                            })}
+                        </div>
+                    </div>
                 </div>
             </div>
         )

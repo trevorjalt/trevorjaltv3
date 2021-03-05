@@ -49,12 +49,27 @@
 
 @media all and (min-width: 500px) {
     .recent-project-preview {
-        width: 22vh;
+       width: 22vh;
     }  
 }
 
 @media all and (min-width: 800px) {   
-    .recent-project-wrapper {
+    .recent-project-preview {
+        width: 15vw;
+        height: 43vh;
+        object-fit: cover;
+        margin-right: 7vw;
+    }  
+
+    .recent-project-details-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5vh;
+    }
+
+    .recent-project-text-wrapper {
         width: 50vw;
     }
 
