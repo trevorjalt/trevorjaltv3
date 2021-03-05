@@ -7,7 +7,7 @@ import LandingRoute from '../../routes/LandingRoute/LandingRoute'
 import NotFoundRoute from '../../routes/NotFoundRoute/NotFoundRoute'
 import PortfolioRoute from '../../routes/PortfolioRoute/PortfolioRoute'
 // import Footer from '../Footer/Footer'
-// import Header from '../Header/Header'
+import Header from '../Header/Header'
 // import NavMenu from '../NavMenu/NavMenu'
 import './App.css'
 
@@ -54,7 +54,7 @@ export default class App extends Component {
 
         return (
           <div className='App'>
-              {/* <Header /> */}
+              <Header />
               {/* <NavMenu /> */}
               <main
                   className='App-Main'
@@ -62,7 +62,7 @@ export default class App extends Component {
                   {error && (
                       <p aria-live='assertive'>There was an error! Oh no!</p>
                   )}
-                  {this.renderRoutes()} 
+                  {/* {this.renderRoutes()}  */}
               </main>
               {/* <Footer /> */}
           </div>
