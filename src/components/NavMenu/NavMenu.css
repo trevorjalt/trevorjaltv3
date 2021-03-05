@@ -10,13 +10,14 @@
   
 .navigation {
     top: 20vh;
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     background-color: #FFEED6;
     position: fixed;
     text-align: left;
     animation: .5s ease-in-out 0s 1 slideInFromTop;
     z-index: 50;
+    overflow: hidden;
 }
 
 .navigation-link-wrapper {
