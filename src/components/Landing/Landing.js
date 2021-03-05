@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import PortfolioContext from '../../contexts/PortfolioContext'
 import TrevorJAltBlue from '../../images/trevor-j-alt-blue.png'
-import RecentProject from '../RecentProject/RecentProject'
+// import RecentProject from '../RecentProject/RecentProject'
 import './Landing.css'
 
 
@@ -88,9 +88,9 @@ export default class Landing extends Component {
                     {error && <p>{error.message}</p>}
                 </div>
                 {this.renderQuote()}
-                {this.renderLandingMain()}   
-                {this.renderOurServices()}
-                <RecentProject />
+                {/* {this.renderLandingMain()}    */}
+                {/* {this.renderOurServices()} */}
+                {/* <RecentProject /> */}
                 {this.renderQuote2()}
             </div>
         )

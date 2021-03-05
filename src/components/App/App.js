@@ -62,7 +62,7 @@ export default class App extends Component {
                   {error && (
                       <p aria-live='assertive'>There was an error! Oh no!</p>
                   )}
-                  {/* {this.renderRoutes()}  */}
+                  {this.renderRoutes()} 
               </main>
               <Footer />
           </div>
