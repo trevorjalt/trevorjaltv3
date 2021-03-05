@@ -10,7 +10,7 @@ body {
     min-height: 100%;
     position: relative;
     background: #050505;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 code {

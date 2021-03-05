@@ -23,9 +23,9 @@ export default class Header extends Component {
                         </h1>
                         <span className='job-title'>SOFTWARE DEVELOPER</span>
                     </div>
-                    <div className='invisible-icon'>
+                    {/* <div className='invisible-icon'>
                         <span className='invisible-stripe' />
-                    </div>
+                    </div> */}
                 </div>
             </header>
         )
