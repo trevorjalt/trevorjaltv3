@@ -141,7 +141,7 @@ export default class Carousel extends Component {
             <div className='carousel-wrapper'>
                 {this.context.toggleCarousel === true 
                     ? <span className='carousel-title'>FUN FACTS</span>
-                    : <span className='carousel-title'>RECENT PROJECTS</span>
+                    : <span className='carousel-title-large'>THE WORK</span>
                 }
                 <div className='carousel'>
                     <img

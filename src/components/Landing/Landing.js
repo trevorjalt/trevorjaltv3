@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import PortfolioContext from '../../contexts/PortfolioContext'
 import TrevorJAltBlue from '../../images/trevor-j-alt-blue.png'
-import Carousel from '../Carousel/Carousel'
+import RecentProject from '../RecentProject/RecentProject'
 import './Landing.css'
 
 
@@ -18,9 +18,6 @@ export default class Landing extends Component {
 
     componentDidMount() {
         window.scrollTo(0,0)
-        this.context.setToggleCarouselFalse()
-        this.context.setProjectsLength()
-        this.context.setProjectId(null)
     }
     
     renderLandingMain() {
@@ -46,6 +43,18 @@ export default class Landing extends Component {
                 <div className='quote'>
                     <h2>"today or never, that's my motto."</h2>
                     <span className='quote-credit'>- Mary Poppins</span>
+                </div>
+            </div>
+        )
+    }
+
+    renderQuote2() {
+        return (
+            <div className='quote-container farewell'>
+                <div className='quote'>
+                    <h4>"sometimes it is the people no one imagines anything
+                        of who do the things that no one can imagine."</h4>
+                    <span className='quote-credit'>- Alan Turing</span>
                 </div>
             </div>
         )
@@ -81,7 +90,8 @@ export default class Landing extends Component {
                 {this.renderQuote()}
                 {this.renderLandingMain()}   
                 {this.renderOurServices()}
-                <Carousel />         
+                <RecentProject />
+                {this.renderQuote2()}
             </div>
         )
     }

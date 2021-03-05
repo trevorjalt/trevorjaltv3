@@ -111,6 +111,7 @@ h3 {
     .main-wrapper {
         display: flex;
         flex-direction: row;
+        height: 80vh;
     }
 
     .main-photo {
@@ -119,5 +120,9 @@ h3 {
 
     .main-text-wrapper {
         width: 50vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 }

@@ -1,0 +1,64 @@
+
+.recent-project-container {
+    background: #ffffff;
+}
+
+.recent-project-preview {
+    width: 60vw;
+    border: solid 2px #186CA0;
+}
+
+.recent-project-tech-wrapper {
+    margin-bottom: 7vh;
+    font-size: 2vh;
+}
+
+.recent-projects-title-wrapper {
+    background: #ffffff;
+    height: 22vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recent-project-wrapper {
+    width: 80vw;
+}
+
+.recent-project-wrapper a {
+    text-decoration: none;
+    font-family: 'Dancing Script', sans-serif;
+    margin: 0 3vw 0 3vw;
+    font-size: 3vh;
+    color: #050505;
+}
+
+.recent-project-wrapper h3 {
+    font-size: 5vh;
+    margin: 4vh 0 3vh 0;
+}
+
+.recent-project-wrapper h4 {
+    color: #186CA0;
+    font-size: 2.3vh;
+}
+
+.recent-project-wrapper p, .recent-project-tech-wrapper {
+    text-align: left;
+}
+
+@media all and (min-width: 500px) {
+    .recent-project-preview {
+        width: 22vh;
+    }  
+}
+
+@media all and (min-width: 800px) {   
+    .recent-project-wrapper {
+        width: 50vw;
+    }
+
+    .recent-projects-title-wrapper {
+        height: 30vh;
+    }
+}

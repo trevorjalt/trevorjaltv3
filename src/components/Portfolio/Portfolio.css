@@ -36,6 +36,10 @@
     margin: 2vh 0 2vh 0
 }
 
+.port-quote {
+    padding-bottom: 7vh;
+}
+
 .portfolio-title {
     background: #ffffff;
     margin-top: 7vh;
@@ -86,6 +90,11 @@
     font-weight: bold;
 }
 
+.tech-categories-column {
+    display: flex;
+    flex-direction: column;
+}
+
 .tech-title {
     color: #DAECF5;
     font-size: 2.3vh;
@@ -107,20 +116,50 @@
 
 
 @media all and (min-width: 700px) {
-    .link-wrapper a {
+    .experience-wrapper {
+        height: 75vh;
+    }
+
+    .experience-wrapper h3 {
         font-size: 5vh;
-        margin: 5vh 0 5vh 0
+        margin: 7vh 0 7vh 0;
+    }
+
+    .link-wrapper {
+        width: 25vw;
+    }
+
+    .tech-categories-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin: 2vh 15vw 0 15vw;
+    }
+
+    .project-preview {
+        width: 25vw;
+        margin: 0;
+        height: 50vh;
+        object-fit: cover;
+    }
+
+    .project-preview-wrapper {
+        margin: 0;
+        width: 25vw;
     }
 }
 
 @media all and (min-width: 1000px) {
-    .description {
+    .description-wrapper {
         width: 60vw;
     }
 
-    .link-wrapper a {
-        font-size: 7vh;
-        margin: 7vh 0 7vh 0
+    .link-wrapper {
+        width: 20vw;
+    }
+
+
+    .project-preview {
+        width: 20vw;
     }
 
     .portfolio-title {
@@ -129,8 +168,18 @@
     }
 
     .project-logo {
-        width: 50vw;
+        width: 30vw;
         border: solid 2px #050505;
         margin-top: 9.5vh;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .link-wrapper {
+        width: 15vw;
+    }
+
+    .project-preview {
+        width: 15vw;
     }
 }

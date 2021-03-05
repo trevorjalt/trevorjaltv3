@@ -66,6 +66,10 @@ const Store = {
                         'RESTful Api'
                     ]
                 },
+            techSummary: 
+                ['React', 'HTML5', 'CSS3', 'React Router', 'Node.js',
+                'Express.js', 'Knex.js', 'PostgreSQL', 'JWT Authentication',
+                'RESTful Api'],
             slogan: 'it\'s all about the moments',
         },
         {
@@ -97,6 +101,10 @@ const Store = {
                         'RESTful Api'
                     ],
                 },
+            techSummary: 
+                ['React', 'HTML5', 'CSS3', 'React Router', 'Node.js',
+                'Express.js', 'Knex.js', 'PostgreSQL', 'Single Linked List',
+                'JWT Authentication', 'RESTful Api'],
             slogan: 'let\'s get fluent',
         },
         {
@@ -127,6 +135,10 @@ const Store = {
                         'RESTful Api'
                     ]
                 },
+            techSummary: 
+                ['React', 'HTML5', 'CSS3', 'React Router', 'Node.js',
+                'Express.js', 'Knex.js', 'PostgreSQL', 'JWT Authentication',
+                'RESTful Api'],
             slogan: 'set your benchMark. break your limits'
         },
     ]

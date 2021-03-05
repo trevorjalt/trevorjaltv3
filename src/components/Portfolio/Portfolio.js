@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PortfolioContext from '../../contexts/PortfolioContext'
+import Carousel from '../Carousel/Carousel'
 import Store from '../Store/Store'
 import './Portfolio.css'
 
@@ -11,7 +12,6 @@ export default class Portfolio extends Component {
 
         const state = {
             error: null,
-            projectId: null,
         }
 
         const divToFocus = []
@@ -35,13 +35,13 @@ export default class Portfolio extends Component {
 
     componentDidMount() {
         window.scrollTo(0,0)
-
-        const { projectId } = this.context
-        this.setState({ projectId })
+        this.context.setToggleCarouselFalse()
+        this.context.setProjectsLength()
+        this.context.setProjectId(null)
     }
     
     componentDidUpdate() {
-        if (this.state.projectId !== null) {
+        if (this.context.projectId !== null) {
             this.handleScroll()
         } 
     }
@@ -106,7 +106,7 @@ export default class Portfolio extends Component {
                 </div>
             </div>
         )
-}
+    }
 
     renderProjectLogo(project) {
         return (
@@ -142,24 +142,32 @@ export default class Portfolio extends Component {
                 aria-label='project-tech'
             >
                 <span className='tech-title'>THE TECH</span>
-                <span className='tech-category'>front-end</span>
-                {project.tech.frontend.map(el => {
-                    return (
-                        <span>{el}</span>
-                    )
-                })}
-                <span className='tech-category'>back-end</span>
-                {project.tech.backend.map(el => {
-                    return (
-                        <span>{el}</span>
-                    )
-                })}
-                <span className='tech-category'>architecture</span>
-                {project.tech.architecture.map(el => {
-                    return (
-                        <span>{el}</span>
-                    )
-                })}
+                <div className='tech-categories-wrapper'>
+                    <div className='tech-categories-column'>
+                        <span className='tech-category'>front-end</span>
+                        {project.tech.frontend.map(el => {
+                            return (
+                                <span key={el}>{el}</span>
+                            )
+                        })}
+                    </div>
+                    <div className='tech-categories-column'>
+                        <span className='tech-category'>back-end</span>
+                        {project.tech.backend.map(el => {
+                            return (
+                                <span key={el}>{el}</span>
+                            )
+                        })}
+                    </div>
+                    <div className='tech-categories-column'>
+                        <span className='tech-category'>architecture</span>
+                        {project.tech.architecture.map(el => {
+                            return (
+                                <span key={el}>{el}</span>
+                            )
+                        })}
+                    </div>
+                </div>
             </div>
         )
     }
@@ -192,7 +200,7 @@ export default class Portfolio extends Component {
 
     renderQuote() {
         return (
-            <div className='quote-container'>
+            <div className='quote-container port-quote'>
                 <div className='quote'>
                     <h2>"whenever you are creating beauty around you, you
                         are restoring your own soul."</h2>
@@ -204,6 +212,8 @@ export default class Portfolio extends Component {
     
     render() {
         const { error } = this.state
+        const { projectId } = this.context
+        console.log('projectId', projectId)
         
         return (
             <div>
@@ -215,9 +225,7 @@ export default class Portfolio extends Component {
                     {error && <p>{error.message}</p>}
                 </div>
                 {this.renderQuote()}
-                <div className='portfolio-title'>
-                    <h3>THE WORK</h3>
-                </div>
+                <Carousel />
                 {this.renderProjects()}     
             </div>
         )

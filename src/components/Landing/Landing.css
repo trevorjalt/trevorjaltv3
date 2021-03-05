@@ -27,18 +27,18 @@
     color: #DAECF5;
 }
 
-.text-container {
+/* .text-container {
     width: 60vw;
     height: 40vh;
     display: flex;
     align-items: center;
-}
+} */
 
-@media all and (max-width: 400px) {
+/* @media all and (max-width: 400px) {
     .text-container {
         width: 65vw;
     }
-}
+} */
 
 @media all and (min-width: 800px) {
     .services-wrapper h3 {
@@ -50,6 +50,13 @@
     }
 
     .text-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .text-container h3 {
         width: 25vw;
     }
 }
