@@ -54,8 +54,8 @@ export default class App extends Component {
 
         return (
           <div className='App'>
-              <Header />
-              <NavMenu />
+              {/* <Header /> */}
+              {/* <NavMenu /> */}
               <main
                   className='App-Main'
               >  
@@ -64,7 +64,7 @@ export default class App extends Component {
                   )}
                   {this.renderRoutes()} 
               </main>
-              <Footer />
+              {/* <Footer /> */}
           </div>
       )
     }
