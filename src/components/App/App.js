@@ -6,9 +6,9 @@ import ContactRoute from '../../routes/ContactRoute/ContactRoute'
 import LandingRoute from '../../routes/LandingRoute/LandingRoute'
 import NotFoundRoute from '../../routes/NotFoundRoute/NotFoundRoute'
 import PortfolioRoute from '../../routes/PortfolioRoute/PortfolioRoute'
-import Footer from '../Footer/Footer'
-import Header from '../Header/Header'
-import NavMenu from '../NavMenu/NavMenu'
+// import Footer from '../Footer/Footer'
+// import Header from '../Header/Header'
+// import NavMenu from '../NavMenu/NavMenu'
 import './App.css'
 
 
