@@ -25,7 +25,7 @@ export default class Contact extends Component {
 
     renderContactForm() {
         return (
-            <form action="https://formspree.io/trevor@trevorjalt.com" method="post">
+            <form action='https://formspree.io/f/xleoykpq' method='POST'>
                 <div className='form-wrapper'>     
                     <label htmlFor='name'>
                         Name
@@ -62,8 +62,8 @@ export default class Contact extends Component {
                     />
                 </div>  
                 <div>
-                    <button type="submit">Send</button>
-                    <button type="reset">Reset</button>
+                    <button type='submit' value='Send'>Send</button>
+                    <button type='reset'>Reset</button>
                 </div>
             </form>
         )
