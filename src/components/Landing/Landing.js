@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import PortfolioContext from '../../contexts/PortfolioContext'
 import TrevorJAltBlue from '../../images/trevor-j-alt-blue.png'
-// import RecentProject from '../RecentProject/RecentProject'
+import RecentProject from '../RecentProject/RecentProject'
 import './Landing.css'
 
 
