@@ -90,7 +90,7 @@ export default class Landing extends Component {
                 {this.renderQuote()}
                 {this.renderLandingMain()}   
                 {this.renderOurServices()}
-                {/* <RecentProject /> */}
+                <RecentProject />
                 {this.renderQuote2()}
             </div>
         )
