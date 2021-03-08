@@ -68,8 +68,8 @@ const Store = {
                 },
             techSummary: 
                 ['React', 'HTML5', 'CSS3', 'React Router', 'Node.js',
-                'Express.js', 'Knex.js', 'PostgreSQL', 'JWT Authentication',
-                'RESTful Api'],
+                'Express.js', 'Knex.js', 'PostgreSQL', 'image processing', 
+                'JWT Authentication', 'RESTful Api'],
             slogan: 'it\'s all about the moments',
         },
         {
