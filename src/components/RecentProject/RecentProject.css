@@ -13,8 +13,13 @@
     font-size: 2.2vh;
 }
 
+
 .recent-project-tech-wrapper p {
     font-size: 2.3vh;
+}
+
+.recent-project-text-wrapper h3 {
+    font-family: 'Poppins', sans-serif;
 }
 
 .recent-projects-title-wrapper {
