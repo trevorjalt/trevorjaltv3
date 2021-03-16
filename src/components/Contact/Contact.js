@@ -133,7 +133,7 @@ export default class Contact extends Component {
         return (
             <div className='quote-container farewell'>
                 <div className='quote'>
-                    <h4>"happy trails to you, until we meet again."</h4>
+                    <h4 className='quote2'>"happy trails to you, until we meet again."</h4>
                     <span className='quote-credit'>- Dale Evans</span>
                 </div>
             </div>

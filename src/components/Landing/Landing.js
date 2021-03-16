@@ -52,7 +52,7 @@ export default class Landing extends Component {
         return (
             <div className='quote-container farewell'>
                 <div className='quote'>
-                    <h4>"sometimes it is the people no one imagines anything
+                    <h4 className='quote2'>"sometimes it is the people no one imagines anything
                         of who do the things that no one can imagine."</h4>
                     <span className='quote-credit'>- Alan Turing</span>
                 </div>
