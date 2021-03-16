@@ -79,6 +79,10 @@ h3 {
     margin: 0;
 }
 
+.quote h4 {
+    margin-bottom: 2vh;
+}
+
 .quote-container {
     display: flex;
     flex-direction: column;
